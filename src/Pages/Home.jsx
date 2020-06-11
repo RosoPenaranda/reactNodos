@@ -8,6 +8,7 @@ import '../Styles/index.css';
 import '../Styles/carousel.css';
 
 import Logos from '../Components/Logos/Logos';
+import Contacto from '../Components/Contacto/Contacto';
 
 class Home extends Component {
   constructor(props) {
@@ -22,6 +23,7 @@ class Home extends Component {
         <Servicios />
         <Valor />
         <Logos />
+        <Contacto />
       </React.Fragment>
     );
   }
