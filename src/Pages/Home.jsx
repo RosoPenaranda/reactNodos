@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 import Banner from '../Components/Banner/Banner';
 import Nosotros from '../Components/Nosotros/Nosotros';
-import '../Styles/index.css';
 import Servicios from '../Components/Servicios/Servicios';
+import Valor from '../Components/Valor/Valor';
+
+import '../Styles/index.css';
+import '../Styles/carousel.css';
+
+import Logos from '../Components/Logos/Logos';
 
 class Home extends Component {
   constructor(props) {
@@ -15,6 +20,8 @@ class Home extends Component {
         <Banner />
         <Nosotros />
         <Servicios />
+        <Valor />
+        <Logos />
       </React.Fragment>
     );
   }
