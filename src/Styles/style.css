@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'Muli';
+  src: url('./Muli/Muli-VariableFont_wght.ttf'),
+  url('./Muli/Muli-Italic-VariableFont_wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,body{
+  font-family: 'Muli';
+  margin:0px;
+}
+
+.gradiente_azul{
+  background: linear-gradient(90deg, rgba(100,175,220,1) 0%, rgba(26,125,184,1) 100%); 
+}
+
+.texto_blanco{
+  color:white;
+}
+
+/*navbar**/
+
+.sombra{
+  -webkit-box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-blue {
+  background: linear-gradient(90deg, rgba(100,175,220,1) 0%, rgba(26,125,184,1) 100%); 
+  transition: all 1s ease;
+}
+
+.navbar-white {
+  background: #ffffff !important;
+  padding-bottom: 0px !important;
+  min-height: 60px;
+}
+
+.navbar-blue a, .navbar-blue .fa-bars{
+  color: white;
+}
+
+.navbar-white a, .navbar-white .fa-bars  {
+  color: #1B9AAA;
+}
+
+
+
+.logoIni {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  transition: all 1s ease;
+  height: 80px;
+}
+
+.logoLst {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 60px;
+}
+
+.navbar a:hover{
+  text-shadow: 1px 1px #777;
+  font-weight: 600;
+  font-size: 22px;
+  transition: all .5s ease;  
+}
+
+/**/
+
+
+
+footer{
+  height: 100px;
+  color:white;
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+.fa-heart{
+  color: red;
+}
+
+footer p{
+  font-size: 18px;
+  font-weight: bold;
+  align-self: center;
+}
+
+@media  (max-width: 767.98px){
+  footer p{
+    font-size: 16px;
+  }
+}
