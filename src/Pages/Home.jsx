@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Banner from '../Components/Banner/Banner';
 import Nosotros from '../Components/Nosotros/Nosotros';
 import '../Styles/index.css';
+import Servicios from '../Components/Servicios/Servicios';
 
 class Home extends Component {
   constructor(props) {
@@ -13,6 +14,7 @@ class Home extends Component {
       <React.Fragment>
         <Banner />
         <Nosotros />
+        <Servicios />
       </React.Fragment>
     );
   }
