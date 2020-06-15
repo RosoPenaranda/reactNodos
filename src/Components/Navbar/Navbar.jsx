@@ -2,6 +2,9 @@ import React from 'react';
 
 import '../../Styles/style.css';
 
+import NodosLogoBlue from '../../Images/NodoFB.png';
+import NodosLogoWithe from '../../Images/nodosFW.png';
+
 const Navbar = (props) => {
   return (
     <nav
@@ -10,7 +13,8 @@ const Navbar = (props) => {
     >
       <div className="navbar-brand flex-grow-1 bd-highlight">
         <a className=" texto_blanco text-decoration-none" href="index.php">
-          <img id="logo" className="logoIni" src="" alt="Nodos Logo" />
+          <img className="logoIni" src={NodosLogoWithe} alt="Nodos Logo" />
+          <img className="logoIni" src={NodosLogoBlue} alt="Nodos Logo" />
         </a>
       </div>
 

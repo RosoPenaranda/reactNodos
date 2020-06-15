@@ -14,6 +14,9 @@ import MongoDB from '../../Images/logos-gris/mongo.png';
 import Oracle from '../../Images/logos-gris/oracle.png';
 import Sql from '../../Images/logos-gris/sql.png';
 import Wordpress from '../../Images/logos-gris/wordpress.png';
+import Html from '../../Images/logos-gris/html.png';
+import Postgres from '../../Images/logos-gris/postgreSQL.png';
+import Redis from '../../Images/logos-gris/redis.png';
 
 const Logos = () => {
   let logos = [
@@ -31,6 +34,9 @@ const Logos = () => {
     { img: Oracle, alt: 'Oracle' },
     { img: Sql, alt: 'SQL' },
     { img: Wordpress, alt: 'Wordpress' },
+    { img: Html, alt: 'Html' },
+    { img: Postgres, alt: 'Postgres' },
+    { img: Redis, alt: 'Redis' },
   ];
   return (
     <section class="invest-cont">

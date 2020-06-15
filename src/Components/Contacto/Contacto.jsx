@@ -14,7 +14,6 @@ const Contacto = () => {
             <form class="text-center border border-light p-5" action="#!">
               <p class="h4 mb-4 titulo">Contacto</p>
               <input
-                id="nombre"
                 type="text"
                 id="defaultContactFormName"
                 class="form-control mb-4"
