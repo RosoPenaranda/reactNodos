@@ -2,8 +2,8 @@ import React from 'react';
 
 import '../../Styles/style.css';
 
-import NodosLogoBlue from '../../Images/NodoFB.png';
-import NodosLogoWithe from '../../Images/nodosFW.png';
+import NodosLogoBlue from '../../Images/logo-outline-blue.png';
+import NodosLogoWithe from '../../Images/logo-outline-white.png';
 
 const Navbar = (props) => {
   return (
@@ -12,8 +12,18 @@ const Navbar = (props) => {
       className="navbar navbar-blue navbar-expand-lg sombra fixed-top bd-highlight"
     >
       <div className="navbar-brand flex-grow-1 bd-highlight">
-        <a className=" texto_blanco text-decoration-none" href="index.php">
-          <img className="logoIni" src={NodosLogoWithe} alt="Nodos Logo" />
+        <a
+          id="LogoWhite"
+          className="texto_blanco text-decoration-none"
+          href="index.php"
+        >
+          <img className="logoIni " src={NodosLogoWithe} alt="Nodos Logo" />
+        </a>
+        <a
+          id="LogoBlue"
+          className="d-none texto_blanco text-decoration-none"
+          href="index.php"
+        >
           <img className="logoIni" src={NodosLogoBlue} alt="Nodos Logo" />
         </a>
       </div>
