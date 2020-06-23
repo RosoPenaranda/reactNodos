@@ -16,14 +16,14 @@ class Home extends Component {
   }
   render() {
     return (
-      <React.Fragment>
+      <>
         <Banner />
         <Nosotros />
         <Servicios />
         <Valor />
         <Logos />
         <Contacto />
-      </React.Fragment>
+      </>
     );
   }
 }
