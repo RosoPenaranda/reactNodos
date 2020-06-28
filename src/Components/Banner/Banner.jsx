@@ -8,7 +8,7 @@ const Banner = () => {
       <div className="row ">
         <div className="col d-flex justify-content-around align-items-center flex-wrap">
           <div className="contenido text-center align-self-center order-0 ">
-            <p class="text-1 texto_blanco">
+            <p className="text-1 texto_blanco">
               Estudio de Diseño <br className="d-none d-lg-block" /> y
               Desarrollo
             </p>

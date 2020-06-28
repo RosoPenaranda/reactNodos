@@ -12,8 +12,54 @@ import '../Styles/carousel.css';
 class Home extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      error: false,
+      msg: '',
+      form: {
+        name: '',
+        email: '',
+        msg: '',
+      },
+    };
   }
+
+  handleChange = (e) => {
+    this.setState({
+      form: {
+        ...this.state.form,
+        [e.target.name]: e.target.value,
+      },
+    });
+  };
+
+  handleSubmit = async (e) => {
+    e.preventDefault();
+    await fetch('https://nodos.dev/email/contac_me.php', {
+      method: 'POST',
+      body: JSON.stringify({
+        name: this.state.name,
+        email: this.state.email,
+        msg: this.state.msg,
+      }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    }).then((res) => {
+      if (res.status === 200) {
+        this.setState({
+          msg: 'Gracias por escribirnos, pronto nos comunicaremos con usted.',
+        });
+        return res.json();
+      } else {
+        this.setState({
+          error: {
+            message: 'A ocurrido un error, por favor intente más tarde',
+          },
+        });
+      }
+    });
+  };
+
   render() {
     return (
       <>
@@ -22,7 +68,13 @@ class Home extends Component {
         <Servicios />
         <Valor />
         <Logos />
-        <Contacto />
+        <Contacto
+          onChange={this.handleChange}
+          onSubmit={this.handleSubmit}
+          formValues={this.state.form}
+          error={this.state.error}
+          msg={this.state.msg}
+        />
       </>
     );
   }

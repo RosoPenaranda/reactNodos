@@ -39,8 +39,8 @@ const Servicios = () => {
       </div>
       <div className="row">
         <div className="col d-flex justify-content-around align-items-center flex-wrap">
-          {servicios.map((servicio) => {
-            return <ServicioCard servicio={servicio} />;
+          {servicios.map((servicio, index) => {
+            return <ServicioCard key={index} servicio={servicio} />;
           })}
         </div>
       </div>

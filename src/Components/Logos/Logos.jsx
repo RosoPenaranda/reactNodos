@@ -39,17 +39,17 @@ const Logos = () => {
     { img: Redis, alt: 'Redis' },
   ];
   return (
-    <section class="invest-cont">
-      <div class="container">
-        <div class="row no-gutters">
-          <div class="col text-center invest-text mt-3 mb-4">
+    <section className="invest-cont">
+      <div className="container">
+        <div className="row no-gutters">
+          <div className="col text-center invest-text mt-3 mb-4">
             Algunas de las tecnologías que utilizamos:
           </div>
         </div>
-        <div class="row no-gutters ">
-          <div class="col text-center invest-logos align-self-center">
-            {logos.map((logo) => (
-              <div class="slide  invest-img">
+        <div className="row no-gutters ">
+          <div className="col text-center invest-logos align-self-center">
+            {logos.map((logo, index) => (
+              <div key={index} className="slide  invest-img">
                 <img src={logo.img} alt={logo.alt} />
               </div>
             ))}
