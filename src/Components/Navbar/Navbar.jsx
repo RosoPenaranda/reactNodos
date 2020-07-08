@@ -2,8 +2,8 @@ import React from 'react';
 
 import '../../Styles/style.css';
 
-import NodosLogoBlue from '../../Images/logo-outline-blue.png';
-import NodosLogoWithe from '../../Images/logo-outline-white.png';
+import NodosLogoBlue from '../../Images/logoazul.png';
+import NodosLogoWithe from '../../Images/logo.png';
 import { Link } from 'react-router-dom';
 
 const Navbar = (props) => {
